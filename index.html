@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastre</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        @media screen and (min-width:800px) and (max-width:100000000px){
+            .resposive-mobile{
+                display: none;
+            }
+        }
+        @media screen and (max-width:800px){
+            .resposive{
+                display: none;
+            }
+        }
+        .login-agn{
+display: flex;
+justify-content: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-agn">
+        <a href="login.html">login</a>
+    </div>
+    
+<form action="">
+<label for="nome">nome</label>
+<input type="text" name="nome" id="nome" placeholder="nome" required maxlength="10" min="2">
+<label  class="resposive"  for="email">e-mail</label>
+<input class="resposive" type="email" placeholder="e-mail" required max="20">
+<label class="resposive-mobile" for="telefone">telefone</label>
+<input  class="resposive-mobile" type="tel" name="telefone" id="telefone" placeholder="(00) 0000 - 00000">
+<label for="keywords">senha</label>
+<input type="number" name="keywords" id="keywords" required placeholder="senha">
+
+<div class="sub">
+   <input type="submit" value="enviar">
+</div>
+</form>
+
+
+
+
+</body>
+</html>
